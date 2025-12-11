@@ -5,7 +5,7 @@
         "link": "https://sprunk-engine.com/",
         "background": "/projects/sprunk/background.jpg",
         "mobile_pic": "/projects/sprunk/web.png",
-        "desktop_pic": "/projects/sprunk/template.png"
+        "desktop_pic": "/projects/sprunk/template.jpg"
     },
     {
         "title": "Find your tribe",
@@ -21,7 +21,7 @@
         "link": "https://github.com/Cyprien-png/portfolio",
         "background": "/backgrounds/mountains.jpg",
         "mobile_pic": "/projects/portfolio/contact.png",
-        "desktop_pic": "/projects/portfolio/home.png"
+        "desktop_pic": "/projects/portfolio/home.jpg"
     },
     {
         "title": "SeaCracker",
@@ -29,6 +29,6 @@
         "link": "https://github.com/orgs/SeaCrackers/repositories",
         "background": "/projects/sea-cracker/background.jpg",
         "mobile_pic": "/projects/sea-cracker/answer.png",
-        "desktop_pic": "/projects/sea-cracker/question.png"
+        "desktop_pic": "/projects/sea-cracker/question.jpg"
     }
 ]

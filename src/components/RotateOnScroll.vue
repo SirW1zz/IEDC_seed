@@ -84,7 +84,6 @@ onMounted(async () => {
     windowComponent.value = new AnimatedComponent();
     windowComponent.value.tick = computeLayout;
     windowComponent.value.addAnimationTrigger(window, "resize");
-    computeLayout();
 })
 
 onBeforeUnmount(() => {

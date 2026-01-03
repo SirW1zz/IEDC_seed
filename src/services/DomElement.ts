@@ -42,7 +42,7 @@ export class DomElement {
     private createEventObserver(event: string): void {
         const observer = new EventObserver();
         const boundHandler = (e: Event) => observer.emit(e);
-        this.element.addEventListener(event, boundHandler, { passive: false });
+        this.element.addEventListener(event, boundHandler, { passive: true });
         this.listeners[event] = { observer, boundHandler: boundHandler as EventListener };
     }
 

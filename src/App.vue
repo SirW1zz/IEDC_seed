@@ -1,5 +1,5 @@
 <script setup>
-import ScrollBar from './components/ScrollBar.vue';
+import ScrollBar from '@/components/Scrollbar.vue';
 import LiquidNavbar from '@/components/LiquidNavbar.vue';
 import LiquidFilter from '@/filter/LiquidFilter.vue';
 import LiquidTexturedFilter from '@/filter/LiquidTexturedFilter.vue';
@@ -11,7 +11,7 @@ import Awards from '@/views/Awards.vue';
 import Testimonials from '@/views/Testimonials.vue';
 import TestimonialsMobile from '@/views/TestimonialsMobile.vue';
 import Contact from '@/views/Contact.vue';
-import CustomA from './components/CustomA.vue';
+import CustomA from '@/components/CustomA.vue';
 import { provideScrollContext } from '@/composables/useScrollContext';
 import { useCursorContext } from '@/composables/useCursorContext';
 import { useWindowContext } from '@/composables/useWindowContext';
@@ -93,6 +93,9 @@ onMounted(async () => {
   to {
     opacity: 0;
     display: none;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
   }
 }
 </style>

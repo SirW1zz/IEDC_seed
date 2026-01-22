@@ -45,7 +45,7 @@ onMounted(async () => {
 <template>
   <section id="loading"
     class="outline-[100dvw] outline-white rounded-[999px] bg-transparent h-0 w-0 fixed top-1/2 left-1/2 z-[100] -translate-1/2 flex items-center justify-center">
-    <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">The paint is drying...</span>
+    <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">Innovation Ahead</span>
   </section>
   <ScrollBar />
   <LiquidFilter />

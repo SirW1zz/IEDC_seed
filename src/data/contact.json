@@ -1,31 +1,30 @@
 {
-    "Hire me": [
+    "Contact Us": [
         {
-            "text": "cyprien@jaquier.dev",
-            "href": "mailto:cyprien@jaquier.dev"
-        }
-    ],
-    "Social": [
-        {
-            "text": "LinkedIn",
-            "href": "https://www.linkedin.com/in/cyprien-jaquier",
+            "text": "RSET, Rajagiri Valley, Kochi, Kerala",
+            "href": "https://maps.google.com/?q=RSET+Rajagiri+Valley+Kochi+Kerala",
             "target": "_blank"
         },
         {
-            "text": "You seem curious hahaha, you can also add me on Discord ;)",
-            "href": "r0kkxryuk",
-            "hidden": true
+            "text": "rsetiedc@rajagiritech.edu.in",
+            "href": "mailto:rsetiedc@rajagiritech.edu.in"
         }
     ],
-    "Open source": [
+    "Nodal Officer": [
         {
-            "text": "GitHub",
-            "href": "https://github.com/Cyprien-png",
+            "text": "Nitheesh Kurian: +91 94974 13879",
+            "href": "tel:+919497413879"
+        }
+    ],
+    "Follow Us": [
+        {
+            "text": "Instagram",
+            "href": "https://www.instagram.com/rset_iedc/",
             "target": "_blank"
         },
         {
-            "text": "CodePen",
-            "href": "https://codepen.io/R0kkxRyuk",
+            "text": "Website",
+            "href": "https://rsetiedc.in/",
             "target": "_blank"
         }
     ]

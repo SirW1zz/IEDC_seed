@@ -12,26 +12,39 @@ onMounted(() => {
 </script>
 
 <template>
-    <FramedMainSection ref="frameRef" id="cyprien" class="h-dvh">
+    <FramedMainSection ref="frameRef" id="home" class="h-dvh">
         <div 
-            class="h-full w-full bg-fit bg-cover bg-position-[center_40%] rounded-4xl bg-[url('/backgrounds/mountains.jpg')] flex flex-col justify-center items-center text-center">
+            class="relative h-full w-full overflow-hidden rounded-4xl bg-black flex flex-col justify-center items-center text-center">
+            
+            <!-- Video Background -->
+            <video 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                class="absolute inset-0 w-full h-full object-cover opacity-60">
+                <source src="/background.mp4" type="video/mp4">
+            </video>
+
+            <!-- Gradient Overlay for readability -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none"></div>
+            
             <div
-                class="text-[#fff] font-rubik uppercase text-[10dvw] xl:text-[13dvh] leading-none flex flex-col justify-center items-center ">
-                <p class="flex h-[8.4dvw] xl:h-[11dvh] ">In order</p>
-                <p class="flex h-[8.4dvw] xl:h-[11dvh] overflow-hidden">
-                    <span class="standard-text">to </span>
+                class="relative text-[#fff] font-rubik uppercase leading-none flex flex-col justify-center items-center pointer-events-none w-full">
+                <div class="flex h-[12dvw] xl:h-[15dvh] overflow-hidden w-full justify-center">
                     <TextAnim 
                         v-if="containerRef"
-                        :texts="['Build', 'Develop', 'Impact', 'Change', 'Design']" 
+                        :texts="['THINK.', 'INNOVATE.', 'INSPIRE.']" 
                         :container="containerRef" 
                         :duration="2.5" 
-                        :class="'text-red-custom'" 
+                        :class="'text-red-custom text-[12dvw] xl:text-[15dvh]'" 
                     />
-                </p>
-                <p class="flex h-[8.4dvw] xl:h-[11dvh] ">the future</p>
-                <p class="flex h-[8.4dvw] xl:h-[11dvh] ">one line</p>
-                <p class="flex h-[8.4dvw] xl:h-[11dvh] ">at a time.</p>
+                </div>
+                <p class="text-[3dvw] xl:text-[4dvh] mt-4 font-ledger opacity-90 tracking-[0.2em]">WE ARE RSET IEDC.</p>
             </div>
         </div>
     </FramedMainSection>
 </template>
+
+<style scoped>
+</style>

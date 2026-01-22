@@ -1,23 +1,23 @@
 [
     {
-        "image": "/about/kid.png",
-        "when": "When I was a child",
-        "description": "I was always curious about the world around me. I loved drawing, tinkering, and most of my questions began with \"how\" or \"why\". When I got my first video game console, something clicked. \"How does Mario know I want him to jump?\", \"Why does the game crash when I do this action?\", \"How does this Wi-Fi thing let me play with my friends?\"",
-        "from": "2004",
-        "to": "2019"
+        "image": "/iedc/gallery4.jpg",
+        "when": "Who We Are",
+        "description": "At RSET IEDC, we nurture students interested in establishing their startups and aim to ignite their entrepreneurial spirit right here at the campus at Rajagiri School of Engineering and Technology. The Innovation and development center (IEDC) not only acts as a facilitator that shapes students' ideas but also serves as a platform to showcase their skills. We are proud to have the backing of Kerala Startup Mission, which supports 283 IEDCs across the state. Our club provides a vibrant community where students can collaborate, learn from industry experts, and access resources that bridge the gap between academic theory and real-world business challenges. By participating in IEDC, students gain hands-on experience in project management, technical development, and leadership, preparing them for a dynamic career in the global market.",
+        "from": "Established",
+        "to": "Present"
     },
     {
-        "image": "/about/teen.png",
-        "when": "Reaching my teenage years",
-        "description": "I left my parents' home to live in the mountains and start an apprenticeship in computer science. There, I learned systems, networking, and the basics of software development. After my apprenticeship, I pursued advanced studies in development, mastering key areas of software engineering and team management, and most importantly, I became ready to take on any challenge.",
-        "from": "2019",
-        "to": "2025"
+        "image": "/iedc/gallery1.jpg",
+        "when": "Our Vision",
+        "description": "To be a self-sustained TBI catering to the needs of young student entrepreneurs with innovative ideas of social relevance and thereby introducing a culture of entrepreneurship inside campus which will strengthen our education system and thereby promoting the national economical and social growth. We envision a future where every student is empowered to innovate and create solutions that have a positive impact on society. Our goal is to develop an ecosystem with required infrastructure that can enable students and faculty to innovate and prototype their potential ideas with industrial standards and support from Government, industry and reputed academic institutions around the world. We believe that by fostering a mindset of continuous improvement and social responsibility, we can shape the leaders of tomorrow.",
+        "from": "Vision",
+        "to": "Impact"
     },
     {
-        "image": "/about/adult.png",
-        "when": "Today",
-        "description": "I'm proud of the journey I've taken so far, but my eyes are still on tomorrow. I keep learning in specific fields to satisfy my curiosity, I continuously improve my home lab, and I often dive into ambitious projects. I'm passionate, and since every project and every great story begins with an idea, feel free to reach out. I'd love to hear from you!",
-        "from": "2025",
-        "to": "Today"
+        "image": "/iedc/gallery2.jpg",
+        "when": "Our Mission",
+        "description": "To develop an ecosystem with required infrastructure that can enable students and faculty to innovate and prototype their potential ideas with industrial standards and support from Government, industry and reputed academic institutions around the world and help them to realize their potentials. We focus on fostering innovation, encouraging entrepreneurship, providing entrepreneurial support, increasing representation of women, and promoting more startups within the college community. Our mission is to prepare students to finish their engineering studies equipped with all the entrepreneurial skills necessary to thrive in their future pursuits. Through workshops, mentorship programs, and networking events, we ensure that our members are always at the forefront of technology and business trends.",
+        "from": "Mission",
+        "to": "Growth"
     }
 ]

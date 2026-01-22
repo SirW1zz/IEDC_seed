@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Annual Report 2024-25",
+        "description": "Comprehensive summary of activities, achievements, and financial overview for the academic year 2024-25, highlighting our growth and impact.",
+        "link": "https://rsetiedc.in/reports/Annual%20Report%202024%2725.pdf",
+        "background": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1920",
+        "mobile_pic": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=600",
+        "desktop_pic": "https://images.unsplash.com/photo-1554224155-6726b3887d1d?auto=format&fit=crop&q=80&w=1280"
+    },
+    {
+        "title": "Annual Report 2023-24",
+        "description": "Detailed review of the 2023-24 academic session, including the successful hosting of the state-level IEDC Summit and other key milestones.",
+        "link": "https://rsetiedc.in/reports/Annual%20Report%202023%2724.pdf",
+        "background": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1920",
+        "mobile_pic": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
+        "desktop_pic": "https://images.unsplash.com/photo-1512428559083-a401c338e45e?auto=format&fit=crop&q=80&w=1280"
+    },
+    {
+        "title": "Annual Report 2022-23",
+        "description": "Reflecting on the initiatives and progress made during 2022-23, fostering a culture of innovation and supporting numerous student startups.",
+        "link": "https://rsetiedc.in/reports/Annual%20Report%202022%2723.pdf",
+        "background": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920",
+        "mobile_pic": "https://images.unsplash.com/photo-1507537297325-5e2069cc72b6?auto=format&fit=crop&q=80&w=600",
+        "desktop_pic": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1280"
+    },
+    {
+        "title": "Annual Report 2021-22",
+        "description": "A look back at the resilience and innovation shown during the 2021-22 term, featuring IPL wins and the growth of our startup ecosystem.",
+        "link": "https://rsetiedc.in/reports/Annual%20Report%202021%22.pdf",
+        "background": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&q=80&w=1920",
+        "mobile_pic": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600",
+        "desktop_pic": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1280"
+    }
+]

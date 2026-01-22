@@ -87,8 +87,8 @@ onBeforeUnmount(() => {
 
 <template>
   <div>
-    <p v-for="(letters, wi) in splitTexts" :key="wi" class="word flex" :ref="setWordRef">
-      <span v-for="(letter, li) in letters" :key="li" class="letter" :ref="setLetterRef" :style="{ '--i': li }">
+    <p v-for="(letters, wi) in splitTexts" :key="wi" class="word flex justify-center w-full" :ref="setWordRef">
+      <span v-for="(letter, li) in letters" :key="li" class="letter" :ref="setLetterRef" :style="{ '--i': li }" :data-letter="letter">
         {{ letter }}
       </span>
     </p>

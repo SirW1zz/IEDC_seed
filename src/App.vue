@@ -6,10 +6,10 @@ import LiquidTexturedFilter from '@/filter/LiquidTexturedFilter.vue';
 import Home from '@/views/Home.vue';
 import AboutMe from '@/views/AboutMe.vue';
 import AboutMeMobile from '@/views/AboutMeMobile.vue';
-import Projects from '@/views/Projects.vue';
+import Reports from '@/views/Reports.vue';
 import Awards from '@/views/Awards.vue';
-import Testimonials from '@/views/Testimonials.vue';
-import TestimonialsMobile from '@/views/TestimonialsMobile.vue';
+import Team from '@/views/Team.vue';
+import TeamMobile from '@/views/TeamMobile.vue';
 import Contact from '@/views/Contact.vue';
 import CustomA from '@/components/CustomA.vue';
 import { provideScrollContext } from '@/composables/useScrollContext';
@@ -55,16 +55,16 @@ onMounted(async () => {
     <LiquidNavbar />
     <div ref="contentRef" id="content" class=" w-full flex flex-col">
       <Home />
+      <Awards />
       <AboutMe v-if="md" />
       <AboutMeMobile v-else />
-      <Projects />
-      <Awards />
-      <Testimonials v-if="md" />
-      <TestimonialsMobile v-else />
+      <Team v-if="md" />
+      <TeamMobile v-else />
+      <Reports />
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
-          <CustomA text="Read the code here" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
+          <CustomA text="© 2025 RSET IEDC" href="https://rsetiedc.in/" target="_blank" />
         </span>
       </footer>
     </div>

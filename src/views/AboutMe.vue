@@ -68,31 +68,36 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <FramedMainSection ref="frameRef" id="about-me" class="min-h-[100dvh] flex items-center relative">
+    <FramedMainSection ref="frameRef" id="about" class="min-h-[100dvh] flex items-center relative">
         <!-- Frame -->
         <FollowingFrame v-if="frameSectionRef" :contentSection="frameSectionRef">
             <div ref="topRef" class="h-full w-full bg-white p-[3dvw]">
                 <div class="h-full w-full relative flex justify-center items-center rounded-4xl overflow-hidden">
                     <div class="absolute h-full w-full top-0 left-0 bg-[url('/backgrounds/room.jpg')] bg-cover bg-bottom"></div>
-                    <div class="h-1/2 w-full overflow-hidden px-[3dvw] z-10">
-
-                        <div class="absolute h-6 z-30 flex items-center gap-2 text-white">
-                            <span class="w-10">{{ stories[currentSectionId].from }}</span>
-                            <div class="h-full w-40 flex items-center border-x-2">
-                                <div class="h-1 bg-white" :style="`width: ${sectionPercent}%`"></div>
+                    <div class="h-[75%] w-full overflow-hidden px-[5dvw] z-10">
+                        
+                        <!-- Navigation / Progress Bar -->
+                        <div class="absolute top-[8%] left-[5dvw] h-6 z-30 flex items-center gap-4 text-white">
+                            <span class="min-w-fit font-ledger text-sm opacity-80 uppercase tracking-widest">{{ stories[currentSectionId].from }}</span>
+                            <div class="h-[2px] w-48 flex items-center bg-white/20">
+                                <div class="h-full bg-white transition-all duration-300" :style="`width: ${sectionPercent}%`"></div>
                             </div>
-                            <span class="w-10">{{ stories[currentSectionId].to }}</span>
+                            <span class="min-w-fit font-ledger text-sm opacity-80 uppercase tracking-widest">{{ stories[currentSectionId].to }}</span>
                         </div>
 
                         <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-white">
-                            <div v-for="story in stories" class="h-full w-full aspect-square flex items-end justify-end gap-6">
-                                <div class="flex gap-2 flex-col">
-                                    <h1 class="font-bold text-xl leading-none font-rubik">{{ story.when }}</h1>
-                                    <p class="flex-1 h-fit">
+                            <div v-for="story in stories" :key="story.when" class="h-full w-full flex items-center justify-between gap-12">
+                                <!-- Text Container: 55% width -->
+                                <div class="w-[55%] flex flex-col gap-6 pt-16">
+                                    <h1 class="font-bold text-3xl xl:text-4xl leading-tight font-rubik text-red-custom uppercase tracking-tighter">{{ story.when }}</h1>
+                                    <p class="text-lg xl:text-xl font-ledger leading-relaxed opacity-95 overflow-y-auto max-h-[35dvh] pr-4" style="scrollbar-width: thin; scrollbar-color: white transparent;">
                                         {{ story.description }}
                                     </p>
                                 </div>
-                                <img :src="story.image" alt="" class="mr-0 md:mr-[6dvw] lg:mr-[12dvw] w-fit aspect-[9/16] max-h-full object-contain object-bottom"/>
+                                <!-- Image Container: 40% width -->
+                                <div class="w-[40%] h-full flex items-center justify-center p-4">
+                                    <img :src="story.image" alt="" class="rounded-2xl w-full h-full object-cover shadow-2xl transition-transform hover:scale-[1.02] duration-500 border border-white/10"/>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,64 +1,55 @@
 <script setup>
-import { onMounted, ref, onBeforeUnmount } from 'vue';
+import { ref } from 'vue';
 import FramedMainSection from '@/layouts/FramedMainSection.vue';
-import { useScrollContext } from '@/composables/useScrollContext'
-import { AnimatedComponent } from '@/services/AnimatedComponent';
 import contact from '@/data/contact.json'
 import CustomA from '@/components/CustomA.vue';
 import Parallax from '@/components/Parallax.vue';
 
-const component = ref(null)
 const frameRef = ref(null)
-const { containerRef } = useScrollContext()
 const contactSectionRef = ref(null)
-const translationRef = ref(0)
-const paddingTopRef = ref(0)
-
-const handleScroll = () => {
-    const relativeScrollPosition = frameRef.value.sectionRef.getBoundingClientRect().top;
-    translationRef.value = Math.round(relativeScrollPosition + paddingTopRef.value * 1.5)
-}
-
-onMounted(() => {
-    paddingTopRef.value = parseFloat(getComputedStyle(contactSectionRef.value).paddingTop)
-    component.value = new AnimatedComponent(frameRef.value.sectionRef);
-    component.value.tick = handleScroll;
-    component.value.addAnimationTrigger(containerRef.value, "scroll");
-});
-
-onBeforeUnmount(() => {
-    component.value.reset();
-})
 </script>
 
 <template>
     <FramedMainSection ref="frameRef" id="contact" class="h-dvh">
         <Parallax>
             <div ref="contactSectionRef" class="h-full w-full relative rounded-4xl flex flex-col pt-24">
-                <div class="absolute h-full w-full top-0 left-0 rounded-4xl brightness-[.85] bg-[url('/contact/sky.jpeg')] bg-cover -z-10 overflow-hidden">
-                    <div class="h-full w-full flex justify-center items-end relative">
-                        <img src="/contact/mountains.png" alt="" data-parallax-value=".005" class="absolute h-auto  w-full scale-110 object-cover parallax"/>
-                        <img src="/contact/path.png" alt="" data-parallax-value=".025" class="absolute h-auto w-full translate-y-1/3 scale-110 object-cover parallax"/>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 px-8 text-white">
-                    <div v-for="(value, key) in contact" :key="key" class="h-full w-full">
-                        <h2 class="font-rubik border-b-2 border-dashed border-neutral-400 text-xl">{{ key }}</h2>
-                        <ul class="pt-4 text-2xl flex flex-col gap-2">
-                            <li v-for="(h, index) in value" :key="index" class="w-fit"><CustomA v-if="!h.hidden" :text="h.text" :href="h.href" :target="h.target"/></li>
-                        </ul>
-                    </div>
+                <div class="absolute h-full w-full top-0 left-0 rounded-4xl bg-neutral-900 -z-10 overflow-hidden">
+                    <div class="h-full w-full opacity-30 bg-[radial-gradient(circle_at_50%_50%,_rgba(222,46,46,0.2)_0%,_transparent_70%)]"></div>
+                    <div class="absolute inset-0 bg-[url('/contact/sky.jpeg')] opacity-10 mix-blend-overlay bg-cover"></div>
                 </div>
 
-                <div class="flex flex-col justify-center items-center text-[10dvw] leading-none w-full h-full font-rubik">
-                    <h1 class="text-white">Let's work</h1>
-                    <h1 class="text-red-custom z-10">together</h1>
-                </div>
+                <div class="flex flex-col flex-grow justify-around px-8 py-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-12 text-white">
+                        <div v-for="(value, key) in contact" :key="key" class="flex flex-col items-center md:items-start text-center md:text-left">
+                            <h2 class="font-rubik border-b-2 border-dashed border-neutral-600 text-xl w-full md:w-fit pb-1">{{ key }}</h2>
+                            <ul class="pt-6 text-2xl flex flex-col gap-3">
+                                <li v-for="(h, index) in value" :key="index" class="w-fit mx-auto md:mx-0">
+                                    <CustomA v-if="!h.hidden" :text="h.text" :href="h.href" :target="h.target" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="h-full w-full flex justify-center items-end absolute pointer-events-none bg-red-400a" :style="`transform: translateY(${translationRef}px)`">
-                    <div class="max-h-full relative w-2/3 md:w-full aspect-[9/16]">
-                        <img src="/contact/body.png" alt="" data-parallax-value=".15" class="absolute h-full w-full top-0 left-0 object-contain parallax"/>
-                        <img src="/contact/arm.png" alt="" data-parallax-value=".17" class="absolute h-full w-full top-0 left-0 object-contain parallax"/>
+                    <div class="flex flex-col items-center justify-center py-12">
+                        <div class="flex flex-wrap justify-center items-center gap-16 md:gap-32">
+                            <img src="/logos/rset.png" alt="RSET Logo" class="h-20 md:h-24 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                            <img src="/logos/iedc.png" alt="IEDC Logo" class="h-20 md:h-24 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                            <img src="/logos/rset_ innovation.png" alt="IIC Logo" class="h-20 md:h-24 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-2xl mx-auto flex flex-col items-center pt-8">
+                        <h3 class="text-white font-ledger text-2xl mb-6 opacity-80">Shoot us a question</h3>
+                        <div class="flex w-full bg-white/5 border border-white/20 rounded-full p-2 focus-within:border-red-custom focus-within:bg-white/10 transition-all duration-300">
+                            <input 
+                                type="text" 
+                                placeholder="Write your message here..." 
+                                class="bg-transparent border-none outline-none text-white px-8 py-3 flex-grow font-ledger text-lg"
+                            />
+                            <button class="bg-red-custom text-white px-10 py-3 rounded-full font-rubik text-sm tracking-widest hover:bg-red-700 hover:scale-[1.02] active:scale-95 transition-all">
+                                SEND
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

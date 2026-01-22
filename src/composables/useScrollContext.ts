@@ -28,7 +28,10 @@ export function provideScrollContext() {
       if (s.el) sec.push(s);
     })
 
-    return sec;
+    // Sort sections by their definitive DOM order to ensure consistent navbar sequence
+    return sec.sort((a, b) => {
+      return a.el.compareDocumentPosition(b.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+    });
   }
 
   const scroll = (section: HTMLElement) => {

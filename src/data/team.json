@@ -1,0 +1,32 @@
+[
+    {
+        "writer_image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200",
+        "writer_position": "Nodal Officer",
+        "stars": 5,
+        "description": "Nitheesh Kurian"
+    },
+    {
+        "writer_image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
+        "writer_position": "Assistant Nodal Officer",
+        "stars": 5,
+        "description": "Anu Maria Joykutty"
+    },
+    {
+        "writer_image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200",
+        "writer_position": "Student Lead - IEDC",
+        "stars": 5,
+        "description": "Sarath Menon Girish"
+    },
+    {
+        "writer_image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+        "writer_position": "Student Lead - IIC",
+        "stars": 5,
+        "description": "Anwyl Jolly"
+    },
+    {
+        "writer_image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200",
+        "writer_position": "Student Co-Lead",
+        "stars": 5,
+        "description": "Fathima Moonam Kandathil"
+    }
+]

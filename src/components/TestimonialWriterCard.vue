@@ -23,12 +23,12 @@ const props = defineProps({
 
 <template>
     <header class="flex">
-        <img :src="writerImage" alt="" class="h-12 w-12 rounded-full">
+        <img :src="writerImage" alt="" class="h-12 w-12 max-md:h-10 max-md:w-10 rounded-full">
         <div class="pl-2">
             <div class="flex">
-                <starIcon v-for="i in 5" :class="i <= starsCount ? 'text-yellow-500' : (isDarkMode?'text-transparent':'text-white')" />
+                <starIcon v-for="i in 5" :class="i <= starsCount ? 'text-yellow-500' : (isDarkMode?'text-transparent':'text-white')" class="max-md:scale-90" />
             </div>
-            <span class="italic text-sm" :class="isDarkMode? 'text-neutral-100':'text-neutral-600'">{{ writerPosition }}</span>
+            <span class="italic text-sm max-md:text-xs" :class="isDarkMode? 'text-neutral-100':'text-neutral-600'">{{ writerPosition }}</span>
         </div>
     </header>
 </template>

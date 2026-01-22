@@ -56,10 +56,8 @@ onMounted(async () => {
     <div ref="contentRef" id="content" class=" w-full flex flex-col">
       <Home />
       <Awards />
-      <AboutMe v-if="md" />
-      <AboutMeMobile v-else />
-      <Team v-if="md" />
-      <TeamMobile v-else />
+      <AboutMe />
+      <Team />
       <Reports />
       <Contact />
       <footer class="relative">

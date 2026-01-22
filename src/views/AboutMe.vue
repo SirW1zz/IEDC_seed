@@ -86,16 +86,16 @@ onBeforeUnmount(() => {
                         </div>
 
                         <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-white">
-                            <div v-for="story in stories" :key="story.when" class="h-full w-full flex items-center justify-between gap-12">
-                                <!-- Text Container: 55% width -->
-                                <div class="w-[55%] flex flex-col gap-6 pt-16">
-                                    <h1 class="font-bold text-3xl xl:text-4xl leading-tight font-rubik text-red-custom uppercase tracking-tighter">{{ story.when }}</h1>
-                                    <p class="text-lg xl:text-xl font-ledger leading-relaxed opacity-95 overflow-y-auto max-h-[35dvh] pr-4" style="scrollbar-width: thin; scrollbar-color: white transparent;">
+                            <div v-for="story in stories" :key="story.when" class="h-full w-full flex flex-col md:flex-row items-center justify-between gap-12 max-md:gap-6 max-md:px-4">
+                                <!-- Text Container: 55% width on desktop, full width stack on mobile -->
+                                <div class="w-full md:w-[55%] flex flex-col gap-6 max-md:gap-4 pt-16 max-md:pt-8">
+                                    <h1 class="font-bold text-3xl xl:text-4xl max-md:text-2xl leading-tight font-rubik text-red-custom uppercase tracking-tighter">{{ story.when }}</h1>
+                                    <p class="text-lg xl:text-xl max-md:text-base font-ledger leading-relaxed opacity-95 overflow-y-auto max-h-[35dvh] max-md:max-h-[25dvh] pr-4" style="scrollbar-width: thin; scrollbar-color: white transparent;">
                                         {{ story.description }}
                                     </p>
                                 </div>
-                                <!-- Image Container: 40% width -->
-                                <div class="w-[40%] h-full flex items-center justify-center p-4">
+                                <!-- Image Container: 40% width on desktop, full width on mobile -->
+                                <div class="w-full md:w-[40%] h-full max-md:h-48 flex items-center justify-center p-4 max-md:p-2">
                                     <img :src="story.image" alt="" class="rounded-2xl w-full h-full object-cover shadow-2xl transition-transform hover:scale-[1.02] duration-500 border border-white/10"/>
                                 </div>
                             </div>

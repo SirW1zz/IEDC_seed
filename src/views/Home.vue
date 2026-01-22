@@ -30,17 +30,17 @@ onMounted(() => {
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none"></div>
             
             <div
-                class="relative text-[#fff] font-rubik uppercase leading-none flex flex-col justify-center items-center pointer-events-none w-full">
-                <div class="flex h-[12dvw] xl:h-[15dvh] overflow-hidden w-full justify-center">
+                class="relative text-[#fff] font-rubik uppercase leading-none flex flex-col justify-center items-center pointer-events-none w-full max-md:px-4">
+                <div class="flex h-[12dvw] xl:h-[15dvh] max-md:h-[18dvw] overflow-hidden w-full justify-center">
                     <TextAnim 
                         v-if="containerRef"
                         :texts="['THINK.', 'INNOVATE.', 'INSPIRE.']" 
                         :container="containerRef" 
                         :duration="2.5" 
-                        :class="'text-red-custom text-[12dvw] xl:text-[15dvh]'" 
+                        :class="'text-red-custom text-[12dvw] xl:text-[15dvh] max-md:text-[10dvw]'" 
                     />
                 </div>
-                <p class="text-[3dvw] xl:text-[4dvh] mt-4 font-ledger opacity-90 tracking-[0.2em]">WE ARE RSET IEDC.</p>
+                <p class="text-[3dvw] xl:text-[4dvh] mt-4 font-ledger opacity-90 tracking-[0.2em] max-md:text-[4.5dvw] max-md:tracking-[0.1em]">WE ARE RSET IEDC.</p>
             </div>
         </div>
     </FramedMainSection>

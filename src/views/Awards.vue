@@ -56,13 +56,13 @@ onMounted(() => {
                 <img src="/awards/trophy.png" alt="" data-parallax-value=".15" class="parallax w-full absolute scale-200 -bottom-1/12 sm:scale-125 md:scale-150 lg:scale-125 lg:-bottom-1/3">
                 
                 <!-- New Facts -->
-                <div data-parallax-value=".1" class="parallax absolute top-[35%] left-[5%] md:left-[15%] text-left flex flex-col pointer-events-none">
-                    <span class="font-rubik text-3xl md:text-5xl lg:text-6xl text-red-custom">{{ memberCount }}+</span>
-                    <span class="font-rubik text-xs md:text-sm lg:text-base opacity-80 uppercase font-bold">Members</span>
+                <div data-parallax-value=".1" class="parallax absolute top-[35%] max-md:top-auto max-md:bottom-[18%] left-[5%] md:left-[15%] text-left flex flex-col pointer-events-none">
+                    <span class="font-rubik text-3xl md:text-5xl lg:text-6xl max-md:text-2xl text-red-custom">{{ memberCount }}+</span>
+                    <span class="font-rubik text-xs md:text-sm lg:text-base max-md:text-[10px] opacity-80 uppercase font-bold">Members</span>
                 </div>
-                <div data-parallax-value=".1" class="parallax absolute top-[35%] right-[5%] md:right-[15%] text-right flex flex-col pointer-events-none">
-                    <span class="font-rubik text-3xl md:text-5xl lg:text-6xl text-red-custom">{{ eventCount }}+</span>
-                    <span class="font-rubik text-xs md:text-sm lg:text-base opacity-80 uppercase font-bold">Events</span>
+                <div data-parallax-value=".1" class="parallax absolute top-[35%] max-md:top-auto max-md:bottom-[18%] right-[5%] md:right-[15%] text-right flex flex-col pointer-events-none">
+                    <span class="font-rubik text-3xl md:text-5xl lg:text-6xl max-md:text-2xl text-red-custom">{{ eventCount }}+</span>
+                    <span class="font-rubik text-xs md:text-sm lg:text-base max-md:text-[10px] opacity-80 uppercase font-bold">Events</span>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row">

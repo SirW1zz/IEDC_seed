@@ -21,13 +21,13 @@ onMounted(async () => {
                     <div :ref="registerContainer"
                         class="flex flex-col relative items-center w-fit z-30 perspective-distant text-black" style="height: auto;">
                         <div v-for="(member, i) in team" :key="i"
-                            class="testimonial-item w-full text-left flex flex-col gap-2 py-8 px-20">
+                            class="testimonial-item w-full text-left flex flex-col gap-2 py-8 px-20 max-md:px-6">
                             <TestimonialWriterCard 
                             :writerImage="member.writer_image" 
                             :writerPosition="member.writer_position" 
                             :starsCount="member.stars" 
                             />
-                            <p class="font-rubik text-xl">
+                            <p class="font-rubik text-xl max-md:text-base max-md:leading-snug">
                                 {{ member.description }}
                             </p>
                         </div>

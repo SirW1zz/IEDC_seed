@@ -77,12 +77,12 @@ onBeforeUnmount(() => {
                     <div class="h-[75%] w-full overflow-hidden px-[5dvw] z-10">
                         
                         <!-- Navigation / Progress Bar -->
-                        <div class="absolute top-[8%] left-[5dvw] h-6 z-30 flex items-center gap-4 text-white">
-                            <span class="min-w-fit font-ledger text-sm opacity-80 uppercase tracking-widest">{{ stories[currentSectionId].from }}</span>
-                            <div class="h-[2px] w-48 flex items-center bg-white/20">
+                        <div class="absolute top-[8%] left-[5dvw] h-6 max-md:h-5 z-30 flex items-center gap-4 max-md:gap-2 text-white">
+                            <span class="min-w-fit font-ledger text-sm max-md:text-[10px] opacity-80 uppercase tracking-widest max-md:tracking-wide">{{ stories[currentSectionId].from }}</span>
+                            <div class="h-[2px] w-48 max-md:w-24 flex items-center bg-white/20">
                                 <div class="h-full bg-white transition-all duration-300" :style="`width: ${sectionPercent}%`"></div>
                             </div>
-                            <span class="min-w-fit font-ledger text-sm opacity-80 uppercase tracking-widest">{{ stories[currentSectionId].to }}</span>
+                            <span class="min-w-fit font-ledger text-sm max-md:text-[10px] opacity-80 uppercase tracking-widest max-md:tracking-wide">{{ stories[currentSectionId].to }}</span>
                         </div>
 
                         <div ref="contentRef" class="h-full w-full transition-transform duration-400 text-white">
